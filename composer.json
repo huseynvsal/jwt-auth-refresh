@@ -3,7 +3,7 @@
   "description": "A Laravel package for JWT authentication with access and refresh tokens.",
   "license": "MIT",
   "type": "library",
-  "version": "1.0.2",
+  "version": "1.0.0",
   "authors": [
     {
       "name": "Vusal Huseynli",
