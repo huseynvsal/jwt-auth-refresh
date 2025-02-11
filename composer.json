@@ -1,0 +1,45 @@
+{
+  "name": "huseynvsal/jwt-auth-refresh",
+  "description": "A Laravel package for JWT authentication with access and refresh tokens.",
+  "license": "MIT",
+  "type": "library",
+  "version": "1.0.2",
+  "authors": [
+    {
+      "name": "Vusal Huseynli",
+      "email": "huseynlivusal25@gmail.com"
+    }
+  ],
+  "require": {
+    "php": ">=8.0",
+    "firebase/php-jwt": "^6.0",
+    "illuminate/database": "^9.0|^10.0|^11.0",
+    "illuminate/auth": "^9.0|^10.0|^11.0",
+    "illuminate/support": "^9.0|^10.0|^11.0",
+    "illuminate/contracts": "^9.0|^10.0|^11.0",
+    "illuminate/http": "^9.0|^10.0|^11.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "Huseynvsal\\JwtAuthRefresh\\": "src/"
+    }
+  },
+  "repositories": [
+    {
+      "type": "vcs",
+      "url": "https://github.com/huseynvsal/jwt-auth-refresh"
+    }
+  ],
+  "config": {
+    "secure-http": false
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Huseynvsal\\JwtAuthRefresh\\Providers\\JwtAuthRefreshServiceProvider"
+      ]
+    }
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true
+}
