@@ -122,4 +122,9 @@ class JwtAuthService
             return null;
         }
     }
+
+    public function getJtiFromToken(string $token): string
+    {
+        return $this->decodeToken($token, $this->refreshSecret)->jti;
+    }
 }
