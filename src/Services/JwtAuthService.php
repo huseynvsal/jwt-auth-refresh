@@ -88,7 +88,6 @@ class JwtAuthService
 
     public function revokeTokensForUser(object $user): void
     {
-        $user->accessTokens()->delete();
         $user->refreshTokens()->delete();
     }
 
